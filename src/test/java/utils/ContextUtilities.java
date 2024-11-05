@@ -6,11 +6,11 @@ import org.openqa.selenium.ContextAware;
 import java.util.Set;
 
 @UtilityClass
-public class Context {
+public class ContextUtilities {
 
     private final ContextAware appiumdriver = (ContextAware) AqualityServices.getApplication().getDriver();
 
-    public void contexts() {
+    public void printContexts() {
 
         //get the current context
         String currentContext = appiumdriver.getContext();

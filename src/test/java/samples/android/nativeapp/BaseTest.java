@@ -11,8 +11,8 @@ public class BaseTest {
         AqualityServices.getApplication();
     }
 
-//    @AfterMethod
-//    public void tearDown() {
-//        AqualityServices.getApplication().quit();
-//    }
+    @AfterMethod
+    public void tearDown() {
+        AqualityServices.getApplication().quit();
+    }
 }
